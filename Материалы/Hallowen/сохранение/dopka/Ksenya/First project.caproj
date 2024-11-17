@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>First project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>e6ptwb00bulb</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="игрок" sid="478627522930122">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="486988554010830">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="844923447485454">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="стою" pingpong="0" repeatcount="1" repeatto="0" sid="986733408919309" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.676259" original-source="D:\Work\Тьютер\const\new\Hallowen\Пераонаж\Group 6.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.431655" />
+                            <point x="0.777777" y="0.431655" />
+                            <point x="0.796296" y="0.992806" />
+                            <point x="0.308642" y="0.985611" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="бег" pingpong="0" repeatcount="1" repeatto="0" sid="702850129523211" speed="10">
+                    <frame duration="1" hotspotX="0.52439" hotspotY="0.460993" original-source="D:\Work\Тьютер\const\new\Hallowen\Пераонаж\Group 7.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.431655" />
+                            <point x="0.777777" y="0.431655" />
+                            <point x="0.796296" y="0.992806" />
+                            <point x="0.308642" y="0.985611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.454545" original-source="D:\Work\Тьютер\const\new\Hallowen\Пераонаж\Group 8.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.431655" />
+                            <point x="0.777777" y="0.431655" />
+                            <point x="0.796296" y="0.992806" />
+                            <point x="0.308642" y="0.985611" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="падение" pingpong="0" repeatcount="1" repeatto="0" sid="504776749715979" speed="5">
+                    <frame duration="1" hotspotX="0.561798" hotspotY="0.472222" original-source="D:\Work\Тьютер\const\new\Hallowen\Пераонаж\Group 10.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.431655" />
+                            <point x="0.777777" y="0.431655" />
+                            <point x="0.796296" y="0.992806" />
+                            <point x="0.308642" y="0.985611" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="прыжок" pingpong="0" repeatcount="1" repeatto="0" sid="452757725688171" speed="5">
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.460993" original-source="D:\Work\Тьютер\const\new\Hallowen\Пераонаж\Group 9.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.431655" />
+                            <point x="0.777777" y="0.431655" />
+                            <point x="0.796296" y="0.992806" />
+                            <point x="0.308642" y="0.985611" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="земля" sid="372616274165430">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="812826590664861">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Work\Тьютер\const\обучалка\Textures\green.png" />
+        </object-type>
+        <object-type name="тыква" sid="970763686209123">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="952082282160040">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="13" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482521336998214" speed="5">
+                    <frame duration="1" hotspotX="0.493421" hotspotY="0.492647">
+                        <collision-poly>
+                            <point x="0.25" y="0.220588" />
+                            <point x="0.493421" y="0.0220588" />
+                            <point x="0.763158" y="0.191176" />
+                            <point x="0.986842" y="0.492647" />
+                            <point x="0.828947" y="0.867647" />
+                            <point x="0.493421" y="0.992647" />
+                            <point x="0.171053" y="0.852941" />
+                            <point x="0.0131579" y="0.492647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493421" hotspotY="0.492647">
+                        <collision-poly>
+                            <point x="0.25" y="0.220588" />
+                            <point x="0.493421" y="0.0220588" />
+                            <point x="0.763158" y="0.191176" />
+                            <point x="0.986842" y="0.492647" />
+                            <point x="0.828947" y="0.867647" />
+                            <point x="0.493421" y="0.992647" />
+                            <point x="0.171053" y="0.852941" />
+                            <point x="0.0131579" y="0.492647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.246667" y="0.227941" />
+                            <point x="0.493333" y="0.0220588" />
+                            <point x="0.766667" y="0.198529" />
+                            <point x="0.993333" y="0.5" />
+                            <point x="0.833333" y="0.875" />
+                            <point x="0.493333" y="0.985294" />
+                            <point x="0.166667" y="0.860294" />
+                            <point x="0.00666668" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.25" y="0.220588" />
+                            <point x="0.5" y="0.0220588" />
+                            <point x="0.769737" y="0.198529" />
+                            <point x="0.993421" y="0.5" />
+                            <point x="0.828947" y="0.867647" />
+                            <point x="0.5" y="0.992647" />
+                            <point x="0.177632" y="0.860294" />
+                            <point x="0.0131579" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.492647">
+                        <collision-poly>
+                            <point x="0.262821" y="0.220588" />
+                            <point x="0.5" y="0.0147059" />
+                            <point x="0.762821" y="0.191176" />
+                            <point x="0.99359" y="0.492647" />
+                            <point x="0.826923" y="0.867647" />
+                            <point x="0.5" y="0.985294" />
+                            <point x="0.185897" y="0.852941" />
+                            <point x="0.0128205" y="0.492647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.496933" hotspotY="0.492754">
+                        <collision-poly>
+                            <point x="0.269939" y="0.224638" />
+                            <point x="0.496933" y="0.0217391" />
+                            <point x="0.748466" y="0.195652" />
+                            <point x="0.993865" y="0.492754" />
+                            <point x="0.809816" y="0.862319" />
+                            <point x="0.496933" y="0.985507" />
+                            <point x="0.196319" y="0.847826" />
+                            <point x="0.00613497" y="0.492754" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490446" hotspotY="0.489051">
+                        <collision-poly>
+                            <point x="0.254777" y="0.218978" />
+                            <point x="0.490446" y="0.0145985" />
+                            <point x="0.751592" y="0.189781" />
+                            <point x="0.993631" y="0.489051" />
+                            <point x="0.815287" y="0.861314" />
+                            <point x="0.490446" y="0.985401" />
+                            <point x="0.178344" y="0.846715" />
+                            <point x="0.00636943" y="0.489051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490446" hotspotY="0.49635">
+                        <collision-poly>
+                            <point x="0.254777" y="0.226277" />
+                            <point x="0.490446" y="0.0145985" />
+                            <point x="0.757962" y="0.189781" />
+                            <point x="0.993631" y="0.49635" />
+                            <point x="0.808917" y="0.861314" />
+                            <point x="0.490446" y="0.985401" />
+                            <point x="0.178344" y="0.854015" />
+                            <point x="0.00636943" y="0.49635" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.487342" hotspotY="0.489051">
+                        <collision-poly>
+                            <point x="0.259494" y="0.226277" />
+                            <point x="0.487342" y="0.0218978" />
+                            <point x="0.753165" y="0.182482" />
+                            <point x="0.993671" y="0.489051" />
+                            <point x="0.810127" y="0.861314" />
+                            <point x="0.487342" y="0.985401" />
+                            <point x="0.177215" y="0.846715" />
+                            <point x="0.00632911" y="0.489051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.487342" hotspotY="0.489051">
+                        <collision-poly>
+                            <point x="0.259494" y="0.226277" />
+                            <point x="0.487342" y="0.0218978" />
+                            <point x="0.753165" y="0.182482" />
+                            <point x="0.993671" y="0.489051" />
+                            <point x="0.810127" y="0.861314" />
+                            <point x="0.487342" y="0.985401" />
+                            <point x="0.177215" y="0.846715" />
+                            <point x="0.00632911" y="0.489051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.486842" hotspotY="0.492647">
+                        <collision-poly>
+                            <point x="0.243421" y="0.220588" />
+                            <point x="0.486842" y="0.0220588" />
+                            <point x="0.756579" y="0.191176" />
+                            <point x="0.993421" y="0.492647" />
+                            <point x="0.828947" y="0.875" />
+                            <point x="0.486842" y="0.985294" />
+                            <point x="0.164474" y="0.852941" />
+                            <point x="0.00657896" y="0.492647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490066" hotspotY="0.492647">
+                        <collision-poly>
+                            <point x="0.251656" y="0.227941" />
+                            <point x="0.490066" y="0.0220588" />
+                            <point x="0.754967" y="0.198529" />
+                            <point x="0.993378" y="0.492647" />
+                            <point x="0.827815" y="0.867647" />
+                            <point x="0.490066" y="0.992647" />
+                            <point x="0.165563" y="0.852941" />
+                            <point x="0.013245" y="0.492647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490066" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.245033" y="0.227941" />
+                            <point x="0.490066" y="0.0294118" />
+                            <point x="0.761589" y="0.198529" />
+                            <point x="0.993378" y="0.5" />
+                            <point x="0.827815" y="0.875" />
+                            <point x="0.490066" y="0.992647" />
+                            <point x="0.165563" y="0.860294" />
+                            <point x="0.013245" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="238499478143369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799049506500597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="платформа" sid="331317947560132">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="121606345578970">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892378082267394" speed="5">
+                    <frame duration="1" hotspotX="0.500605" hotspotY="0.503759" original-source="D:\Work\Тьютер\const\object\Pads\Pad_02_1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.995163" y="0.849624" />
+                            <point x="0" y="0.879699" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="449108134693678">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground" sid="718125532516001">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Work\Тьютер\const\new\Hallowen\Фон\1.png" />
+        </object-type>
+        <object-type name="Sprite2" sid="212988803854519">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453471115425785" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Work\Тьютер\const\new\Hallowen\Фон\1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="790911919457956">
+            <plugin id="Arr" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>lvl 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

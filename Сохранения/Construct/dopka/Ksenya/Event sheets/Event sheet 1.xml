@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="277603076306961">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="158428076640623" type="игрок" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="483782396311900">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="312965705454601" type="игрок" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="745901994707762" type="игрок">
+                            <param id="0" name="Animation">&quot;бег&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="202615049229163">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="690148374105945" type="игрок" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="323068338041665" type="игрок">
+                            <param id="0" name="Animation">&quot;стою&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="759327367374209">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="631473066678239" type="игрок" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="405476675382366" type="игрок">
+                    <param id="0" name="Animation">&quot;прыжок&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="681614357840482">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="773969506990012" type="игрок" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="782546113902248" type="игрок">
+                    <param id="0" name="Animation">&quot;падение&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="162352957028595">
+            <conditions>
+                <condition id="2" name="Key is down" sid="315073303608878" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="565138543013874" type="игрок">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="869773534044669">
+            <conditions>
+                <condition id="2" name="Key is down" sid="228960522132902" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="380946402190383" type="игрок">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
